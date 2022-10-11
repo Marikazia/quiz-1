@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 
 const questions = [
@@ -32,6 +32,11 @@ function Game() {
 }
 
 function App() {
+	const [step, setStep] = React.useState(0);
+	const question = questions[step];
+
+	console.log(question);
+
   return (
 		<>
 			<div className='app'>
