@@ -3,21 +3,21 @@ import './App.css';
 
 const questions = [
   {
-    title: 'React - это ... ?',
-    variants: ['библиотека', 'фреймворк', 'приложение'],
+    title: 'React - its ... ?',
+    variants: ['library', 'framework', 'application'],
     correct: 0,
   },
   {
-    title: 'Компонент - это ... ',
-    variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
+    title: 'Component - its ... ',
+    variants: ['application', 'a part of application or page', 'idk what it is'],
     correct: 1,
   },
   {
-    title: 'Что такое JSX?',
+    title: 'What is a JSX?',
     variants: [
-      'Это простой HTML',
-      'Это функция',
-      'Это тот же HTML, но с возможностью выполнять JS-код',
+      'Its a simple HTML',
+      'Its a function',
+      'Its the same HTML, but with possibility doing JS-code',
     ],
     correct: 2,
   },
