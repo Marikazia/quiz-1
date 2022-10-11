@@ -28,7 +28,19 @@ function Result() {
 }
 
 function Game() {
-
+	return (
+		<>
+			<div className='progress'>
+				<div style={{ width: '50%' }} className="progress__inner"></div>
+			</div>
+			<h1>What is a useState?</h1>
+      <ul>
+        <li>This is a function to store component data</li>
+        <li>This is a global state</li>
+        <li>This is when no one needs you</li>
+      </ul>
+		</>
+	)
 }
 
 function App() {
