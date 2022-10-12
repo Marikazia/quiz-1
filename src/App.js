@@ -27,17 +27,19 @@ function Result() {
 	
 }
 
-function Game() {
+function Game({ question }) {
 	return (
 		<>
-			<div className='progress'>
-				<div style={{ width: '50%' }} className="progress__inner"></div>
+			<div className="progress">
+				<div style={{ width: '20%' }} className="progress__inner"></div>
 			</div>
-			<h1>What is a useState?</h1>
+			<h1>{question.title}</h1>
       <ul>
-        <li>This is a function to store component data</li>
-        <li>This is a global state</li>
-        <li>This is when no one needs you</li>
+				{
+					question.variants.map((text) => (
+						<li key={text}>{text}</li>
+					))
+				}
       </ul>
 		</>
 	)
@@ -52,7 +54,7 @@ function App() {
   return (
 		<>
 			<div className='app'>
-				<Game />
+				<Game question={question}/>
 				{/* <Result /> */}
 			</div>
 		</>
