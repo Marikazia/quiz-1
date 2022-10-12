@@ -61,10 +61,11 @@ function App() {
 			<div className='app'>
 				{
 					step !== questions.length ? ( 
-					<Game step={step} question={question} onClickVariant={onClickVariant} /> ) : ( <Result /> ) 
-				}
+						<Game step={step} question={question} onClickVariant={onClickVariant} /> 
+					) : ( 
+						<Result /> 
+					)}
 				
-				{/* <Result /> */}
 			</div>
 		</>
   );
